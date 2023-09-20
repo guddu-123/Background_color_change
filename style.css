@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.box{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+   
+}
+button{
+    height: 70px;
+    width: 100px;
+    border-radius: 80px;
+    border: 2px solid rgb(36, 79, 158);
+    background-color: blue;
+    color: rgb(0, 221, 255);
+    font-weight: 900;
+    cursor: pointer;
+}
+button.hover{
+    transform: scale(1.1);
+}
+@keyframes scaleAndFade {
+    0% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5; 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+.change-background-animation {
+    animation: scaleAndFade 0.5s ease;
+}
